@@ -1,0 +1,103 @@
+section{
+    padding: 100px 0 30px 0px;
+}
+h1 {
+    font-size: 40px;
+    color: #2C3E50;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom:5px; /* Add space below heading */
+  }
+  
+ 
+  
+  i {
+    font-size: 16px;
+    font-weight: 900;
+    color: #2C3E50 !important;
+    margin: 0 1rem; 
+  }
+  span{
+    position: relative;
+  }
+  
+  span::before
+ {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  span::after
+  {
+     content: '';
+     width: 80px;
+     height: 4px;
+     background-color: #2C3E50;
+     position: absolute;
+     top: 50%;
+     right: 100%;
+     transform: translateY(-50%);
+   }
+   .layer {
+    border-radius: .7rem !important;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .layer i {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%,-50%);
+    font-size: 96px;
+    font-weight: 900;
+    color: #FFFFFF !important;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .layer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1ABA9F;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  
+  .layer:hover::after
+   {
+    opacity: 0.93;
+  }
+  .layer:hover i{
+    opacity: 1;
+  }
+  
+  .layer img {
+    position: relative;
+  }
+ 
+#parent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+.cover{
+    width: 50%;
+    
+}
+

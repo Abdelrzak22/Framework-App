@@ -1,0 +1,56 @@
+<section >
+    <div class="write text-center">
+      <h1 class="pt-5">portfolio component</h1>
+      <div class="star-divider">
+        <span>
+          <i class="fa-solid fa-star pt-2"></i>
+        </span>
+      </div>
+    </div>
+    <div class="container pt-3 w-100">
+      <div class="row g-5 w-100">
+        <div class="col-md-4">
+          <div class="layer w-100 rounded-3" (click)="openImage('/image/poert1.png')"> 
+            <img src="/image/poert1.png" class="w-100" alt="">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="layer w-100 rounded-3" (click)="openImage('/image/port2.png')"> 
+            <img src="/image/port2.png" class="w-100" alt="">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="layer w-100 rounded-3" (click)="openImage('/image/port3.png')"> 
+            <img src="/image/port3.png" class="w-100" alt="">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="layer w-100 rounded-3" (click)="openImage('/image/poert1.png')"> 
+            <img src="/image/poert1.png" class="w-100" alt="">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="layer w-100 rounded-3" (click)="openImage('/image/port2.png')"> 
+            <img src="/image/port2.png" class="w-100" alt="">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="layer w-100 rounded-3" (click)="openImage('/image/port3.png')"> 
+            <img src="/image/port3.png" class="w-100" alt="">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div *ngIf="showOverlay" (click)="close()" id="parent" class="d-flex justify-content-center align-items-center vh-100">
+      <div class="cover text-center">
+        <img [src]="selectedImage" class="w-75" alt="">
+      </div>
+    </div>
+  </section>

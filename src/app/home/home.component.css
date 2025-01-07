@@ -1,0 +1,70 @@
+.all {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  img {
+    width: 260px;
+    text-align: center;
+  }
+  
+  .one {
+    width: 100%;
+    background-size: cover;
+  }
+  
+  section {
+    height: 95vh;
+    background-color: #1ABC9C !important;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; /* Add space below heading */
+  }
+  
+ 
+  
+  i {
+    font-size: 16px;
+    font-weight: 900;
+    color: white !important;
+    margin: 0 1rem; 
+  }
+  span{
+    position: relative;
+  }
+  
+  span::before
+ {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  span::after
+  {
+     content: '';
+     width: 80px;
+     height: 4px;
+     background-color: white;
+     position: absolute;
+     top: 50%;
+     right: 100%;
+     transform: translateY(-50%);
+   }
+  
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }

@@ -1,0 +1,116 @@
+section{
+    padding: 100px 0 50px 0;
+}
+h1 {
+    font-size: 40px;
+    color: #2C3E50;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom:5px; 
+  }
+  
+ 
+  
+  i {
+    font-size: 16px;
+    font-weight: 900;
+    color: #2C3E50 !important;
+    margin: 0 1rem; 
+  }
+  span{
+    position: relative;
+  }
+  
+  span::before
+ {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #2C3E50;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  span::after
+  {
+     content: '';
+     width: 80px;
+     height: 4px;
+     background-color: #2C3E50;
+     position: absolute;
+     top: 50%;
+     right: 100%;
+     transform: translateY(-50%);
+   }
+ 
+   .container{
+    width: 50%;
+    margin: auto;
+    padding-top: 80px;
+   }
+   form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+form input {
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%;
+    background: transparent;
+    margin-bottom: 50px
+}
+
+label {
+    position: absolute;
+    left: 5px;
+    color: #1ABC9C;
+    transition: all 0.4s ease;
+    opacity: 0; 
+}
+
+input#username:not(:placeholder-shown) + label[for="username"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input#userAge:not(:placeholder-shown) + label[for="userAge"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input#userEmail:not(:placeholder-shown) + label[for="userEmail"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input#userPassword:not(:placeholder-shown) + label[for="userPassword"] {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 2px solid #1ABC9C;
+}
+   button{
+    width: fit-content;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+   }
+   
+   @media screen and (max-width:990px) {
+  
+    .container{
+        width: 100%;
+    }
+}
